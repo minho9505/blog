@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BEATLES</title>
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <img id="btn-menu" class="btn-menu" src="./img/btnimg.png" alt=""><span></span>
+        <div id="side-menu" class="side-menu">
+            <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="beatles.html">BEATLES</a></li>
+            <li><a href="#menu2">LED ZEPPELIN</a></li>
+            <li><a href="#menu3">QUEEN</a></li>
+            <li><a href="#menu4">OASIS</a></li>
+            <li><a href="#menu5">RADIOHEAD</a></li>
+            <li><a href="#menu6">MUSE</a></li>
+            <li><a href="#menu7">COLDPLAY</a></li>
+            </ul>
+            <b id="btn-close" class="btn-close"><span></span></b>
+        </div>
+    </header>
+    <div id="content" class="container">
+        <article class="container">
+            <div class="image-container">
+                <img src="./img/beatles/beatles_main.jpg" alt="section 1">
+            </div>
+        </article>
+        <article class="container">
+            <div class="img01 imgsize slideanim">
+                <img src="./img/beatles/beatles01.jpg" alt="">
+            </div>
+            <section class="component">
+                <div id="main_text01" class="slideanim">
+                    <h2 class="artist01 artistname">BEATLES</h2>
+                    <p>전 세계 대중음악의 상징.<br />
+                        세계 대중음악 역사상 가장 영향력 있고 중요한 아티스트이며,<br/>
+                        다양한 음악 장르의 탄생과 발전에 커다란 영향을 준 위대한 선구자이자 혁신가.
+                    </p>
+                </div>
+            </section>
+        </article>
+        <article class="container">
+            <div class="img02 imgsize slideanim">
+                <img src="./img/beatles/beatles02.jpg" alt="">
+            </div>
+            <section class="component">
+                <div class="introduce slideanim">
+                    <h3>비틀즈는 영국 출신의 4인조 록밴드이다.</h3>
+                    <p>
+                        끊임없이 새롭고 창의적인 시도들을 통해 대중음악 영역의 확장과 발전에
+                        큰 기여를 했을 뿐 아니라, 수많은 이들에게 음악의 다양한 즐거움을 일깨워
+                        주었다고 평가된다. 언제나 제일 앞장서서 새로운 문을 연 실험적이고
+                        예술적인 음악인으로서의 면모와, 대중적인 인기를 지닌 슈퍼스타로서의
+                        면모를 동시에 가지고 있었던 독특한 존재였다.
+                    </p>
+                </div>
+            </section>
+        </article>
+        <div class="parallax-window" data-parallax="scroll" data-image-src="img/beatles/beatles_pa.jpg"></div>
+        </article>
+        <article class="container">
+            <section class="component">
+                <div class="viedotext">
+                    <div class="text01">VI-</div><br/>
+                    <div class="text02">DEOS</div>
+                </div>
+                <div class="video">
+                    <div id="player1"></div>
+                </div>
+            </section>
+        </article>
+    </div>
+    <footer id="footer" class="container">
+        <div class="component">
+            <h2>2018 &copy; Interaction Programming 1</h2>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="./js/parallax.js"></script>
+</body>
+</html>
