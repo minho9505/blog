@@ -1,3 +1,25 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // 메뉴 스크립트
 
 
@@ -151,43 +173,43 @@ function McFloatPanel2(){
 
 
     // 영상 삽입 시작
-    var tag = document.createElement('script');
+    // var tag = document.createElement('script');
     
-    tag.src = "https://www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    // tag.src = "https://www.youtube.com/iframe_api";
+    // var firstScriptTag = document.getElementsByTagName('script')[0];
+    // firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
     
-    var player;
-    function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player1', {
-        height: '578',
-        width: '1028',
-        videoId: 'i8tr-4mK3fU',
-        playerVars:{
-            autoplay : 0, // 자동재생
-            controls : 1, // 컨트롤러 바
-            rel : 0, // 관련정보
-            fs : 0,
-            modestbranding : 0,
-            showinfo : 0 // 인포메이션
-        }
-      });
-    }
+    // var player;
+    // function onYouTubeIframeAPIReady() {
+    //     player = new YT.Player('player1', {
+    //     height: '578',
+    //     width: '1028',
+    //     videoId: 'i8tr-4mK3fU',
+    //     playerVars:{
+    //         autoplay : 0, // 자동재생
+    //         controls : 1, // 컨트롤러 바
+    //         rel : 0, // 관련정보
+    //         fs : 0,
+    //         modestbranding : 0,
+    //         showinfo : 0 // 인포메이션
+    //     }
+    //   });
+    // }
     
-    function onPlayerReady(event) {
-      event.target.playVideo();
-    }
+    // function onPlayerReady(event) {
+    //   event.target.playVideo();
+    // }
     
-    var done = false;
-    function onPlayerStateChange(event) {
-      if (event.data == YT.PlayerState.PLAYING && !done) {
-        setTimeout(stopVideo, 6000);
-        done = true;
-      }
-    }
-    function stopVideo() {
-      player.stopVideo();
-    }
+    // var done = false;
+    // function onPlayerStateChange(event) {
+    //   if (event.data == YT.PlayerState.PLAYING && !done) {
+    //     setTimeout(stopVideo, 6000);
+    //     done = true;
+    //   }
+    // }
+    // function stopVideo() {
+    //   player.stopVideo();
+    // }
 
 
     // 영상 삽입 끝

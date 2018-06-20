@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+
 </head>
 <body>
     <header class="header">
@@ -16,12 +19,12 @@
             <ul>
             <li><a href="index.html">HOME</a></li>
             <li><a href="beatles.html">BEATLES</a></li>
-            <li><a href="#menu2">LED ZEPPELIN</a></li>
-            <li><a href="#menu3">QUEEN</a></li>
-            <li><a href="#menu4">OASIS</a></li>
-            <li><a href="#menu5">RADIOHEAD</a></li>
-            <li><a href="#menu6">MUSE</a></li>
-            <li><a href="#menu7">COLDPLAY</a></li>
+            <li><a href="Led.html">LED ZEPPELIN</a></li>
+            <li><a href="Queen.html">QUEEN</a></li>
+            <li><a href="Oasis.html">OASIS</a></li>
+            <li><a href="Radio.html">RADIOHEAD</a></li>
+            <li><a href="Muse.html">MUSE</a></li>
+            <li><a href="Cold.html">COLDPLAY</a></li>
             </ul>
             <b id="btn-close" class="btn-close"><span></span></b>
         </div>
@@ -42,7 +45,7 @@
                         <h2 class="artist01 artistname">BEATLES</h2>
                         <p>전 세계 대중음악의 상징.<br />
                             세계 대중음악 역사상 가장 영향력 있고 중요한 아티스트이며,<br/>
-                            다양한 음악 장르의 탄생과 발전에 커다란 영향을 준 위대한<br/>선구자이자 혁신가이다.
+                            다양한 음악 장르의 탄생과 발전에 커다란 영향을 준 위대한 선구자이자 혁신가이다.
                         </p>
                     </div>
                 </section>
@@ -53,7 +56,7 @@
                 </div>
                 <section class="component">
                     <div class="introduce slideanim">
-                        <h3>비틀즈는 영국 출신의 4인조 록밴드이다.</h3>
+                        <h3>비틀즈는 1960년 리버풀에서 결성된 4인조 록밴드이다.</h3>
                         <p>
                             끊임없이 새롭고 창의적인 시도들을 통해 대중음악 영역의 확장과 발전에
                             큰 기여를 했을 뿐 아니라, 수많은 이들에게 음악의 다양한 즐거움을 일깨워
@@ -68,8 +71,9 @@
             </article>
             <article class="container">
                 <div class="bestsong">
-                    <div class="text01">Recommended</div><br/>
-                    <div class="text02">Song</div>
+                    <!-- <div class="text01">Recommended</div><br/>
+                    <div class="text02">Song</div> -->
+                    <div class="text01">Recommended<br/>Song</div><br/>
                 </div>
                 <div class="song01 slideanim2">
                     <img src="./img/beatles/let.jpg" alt="">
@@ -77,7 +81,7 @@
                 <div class="songintroduce01 slideanim2">
                     <span class="songname">Let It Be</span>
                     <p>
-                        비틀즈의 12번째이자 마지막 앨범으로, 1970년 5월 8일,<br/>
+                        비틀즈의 12번째이자 마지막 앨범으로, 1970년 5월 8일 ,<br/>
                         비틀즈 소유의 애플 레코드 레이블을 달고 발매되었다.<br/>
                         멤버들 간 불화가 극대화된 시점에서 서로를 증오하는 상황에 만들어졌기 때문에<br/>
                         비틀즈의 아쉬운 마지막 음반으로 평가받는다.
@@ -99,7 +103,7 @@
                     </p>
                 </div>
             </article>
-            <article class="container">
+            <article id="songcontainer3" class="container">
                 <div class="song03 slideanim2">
                     <img src="./img/beatles/yesterday.jpg" alt="">
                 </div>
@@ -115,18 +119,23 @@
             <article class="container">
                 <section class="component">
                     <div class="viedotext">
-                        <div class="text01">VI-</div><br/>
-                        <div class="text02">DEOS</div>
+                        <div class="text01">VIDEO</div>
                     </div>
-                    <div class="video">
-                        <div id="player1"></div>
+                    <div class="video column">
+                        <img src="./img/beatles/video.jpg" alt="">
+                        <span>Let it be</span>
+                        <a href="https://www.youtube.com/watch?v=i8tr-4mK3fU" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <!-- <p>- Let it be -</p> -->
+                        <!-- <div id="player1"></div> -->
                     </div>
                 </section>
             </article>
+
+
         </div>
         <footer id="footer" class="container">
             <div class="component">
-                <h2>2018 &copy; Interaction Programming 1</h2>
+                <h2>2018 &copy; Interaction Programming Kim Minho</h2>
             </div>
         </footer>
     </div>

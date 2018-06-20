@@ -9,6 +9,8 @@
   and then simply add classes like .m--blend-$colorName to .fnc-slide 
   to apply specific color for mask blend mode */
 }
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 .fnc-slider {
   overflow: hidden;
   box-sizing: border-box;
@@ -28,6 +30,7 @@
 
 
 /* 마스크, nav 색상 지정 */
+
 .fnc-slider .m--blend-dark .fnc-slide__inner {
   background-color: #8a8a8a;
 }
@@ -90,7 +93,6 @@
 .fnc-slider .m--navbg-yellow {
   background-color: #b18a4f;
 }
-
 
 
 
@@ -574,7 +576,7 @@ body {
 
 .example-slider .fnc-slide-6 .fnc-slide__inner,
 .example-slider .fnc-slide-6 .fnc-slide__mask-inner {
-  background-image: url("./img/mainimg/muse5.jpg");
+  background-image: url("./img/mainimg/museee3.jpg");
 }
 .example-slider .fnc-slide-6 .fnc-slide__inner:before {
   content: "";
@@ -793,7 +795,7 @@ body {
 </style>
 </head>
 <body>
-
+    <div id="loading"><img id="loading-image" src="./img/5.gif" alt="Loading..." /></div>
 <header class="header">
     <!-- <b id="btn-menu" class="btn-menu"><span></span></b> -->
     <img id="btn-menu" class="btn-menu" src="./img/btnimg.png" alt=""><span></span>
@@ -801,12 +803,12 @@ body {
       <ul>
         <li><a href="index.html">HOME</a></li>
         <li><a href="beatles.html">BEATLES</a></li>
-        <li><a href="#menu2">LED ZEPPELIN</a></li>
-        <li><a href="#menu3">QUEEN</a></li>
-        <li><a href="#menu4">OASIS</a></li>
-        <li><a href="#menu5">RADIOHEAD</a></li>
-        <li><a href="#menu6">MUSE</a></li>
-        <li><a href="#menu7">COLDPLAY</a></li>
+        <li><a href="Led.html">LED ZEPPELIN</a></li>
+        <li><a href="Queen.html">QUEEN</a></li>
+        <li><a href="Oasis.html">OASIS</a></li>
+        <li><a href="Radio.html">RADIOHEAD</a></li>
+        <li><a href="Muse.html">MUSE</a></li>
+        <li><a href="Cold.html">COLDPLAY</a></li>
       </ul>
       <b id="btn-close" class="btn-close"><span></span></b>
     </div>
@@ -900,7 +902,7 @@ body {
       </div>
       <!-- slide end -->
       <!-- slide start -->
-      <div class="fnc-slide m--blend-blue">
+      <div class="fnc-slide m--blend-yellow">
         <div class="fnc-slide__inner">
           <div class="fnc-slide__mask">
             <div class="fnc-slide__mask-inner"></div>
@@ -945,7 +947,7 @@ body {
 
 
         <div class="fnc-nav__bg m--navbg-purple"></div>
-        <div class="fnc-nav__bg m--navbg-blue"></div>
+        <div class="fnc-nav__bg m--navbg-yellow"></div>
         <div class="fnc-nav__bg m--navbg-red"></div>
       </div>
 
@@ -1007,10 +1009,9 @@ body {
       </label>
     </div>
   </div>
-</div>
-<script src='//static.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script>
-<script src="./js/script.js"></script>
-<script >(function() {
+</div><script src="./js/script.js"></script>
+<script type="text/javascript">
+(function() {
 
   var $$ = function(selector, context) {
     var context = context || document;
@@ -1019,6 +1020,11 @@ body {
   };
 
   function _fncSliderInit($slider, options) {
+    //setTimeout(function(){
+      var $loading = document.getElementById('loading');
+      $loading.style.display = 'none';
+    //}, 500);
+
     var prefix = ".fnc-";
 
     var $slider = $slider;
@@ -1178,7 +1184,6 @@ autoSlidingDelay - delay in ms. If audoSliding is on and no value provided, defa
 blockASafterClick - boolean. If user clicked any sliding control, autosliding won't start again
 */
 fncSlider(".example-slider", {autoSlidingDelay: 4000});
-
 var $demoCont = document.querySelector(".demo-cont");
 
 [].slice.call(document.querySelectorAll(".fnc-slide__action-btn")).forEach(function($btn) {
